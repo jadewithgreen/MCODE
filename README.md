@@ -1,3 +1,4 @@
+# CHEM 274B Micropresentation
 # MCODE-Based Protein Complex Detection (Vertex Weighting Project)
 
 In this project, we use a Jupyter Notebook to implement the **vertex-weighting stage** of the MCODE algorithm to help identify potential protein complexes in a yeast kinase–substrate interaction network. Our goal is to turn the interaction data into a graph and then compute weights for each protein based on how dense its local neighborhood is.
@@ -9,9 +10,11 @@ The dataset we use comes from:
 In our graph:
 - Each protein is a **node**
 - Each interaction between proteins is an **edge**
-
-We load the dataset, build the graph using NetworkX, calculate vertex weights using k-core density, and visualize the results.
-
+- We build the graph using **NetworkX**
+- We compute vertex weights using:
+  - k-core values  
+  - local density  
+- We visualize the weighted graph to highlight potential protein complexes
 ---
 
 ## Files Included
