@@ -1,2 +1,51 @@
-# MCODE
-basic implementation of mcode in Python
+# CHEM 274B Micropresentation
+# MCODE-Based Protein Complex Detection (Vertex Weighting Project)
+
+In this project, we use a Jupyter Notebook to implement the **vertex-weighting stage** of the MCODE algorithm to help identify potential protein complexes in a yeast kinase–substrate interaction network. Our goal is to turn the interaction data into a graph and then compute weights for each protein based on how dense its local neighborhood is.
+
+The dataset we use comes from:
+
+> Bandyopadhyay S. et al., *A human MAP kinase interactome* (2010) https://doi.org/10.1038/ncomms1139
+
+In our graph:
+- Each protein is a **node**
+- Each interaction between proteins is an **edge**
+- We build the graph using **NetworkX**
+- We compute vertex weights using:
+  - k-core values  
+  - local density  
+- We visualize the weighted graph to highlight potential protein complexes
+---
+
+## Files Included
+
+- **`mcode.ipynb`** – Our main notebook with all code, explanations, and plots.
+- **`Bandyopadhyay2010.xls`** – The protein interaction dataset (this must be in the same folder as the notebook for it to load correctly).
+
+---
+
+## Requirements
+
+To run everything, we need:
+
+- **Python 3.9+**
+- **Jupyter Notebook** or **JupyterLab**
+- These Python packages:
+  - `numpy`
+  - `polars==1.34.0`
+  - `networkx`
+  - `matplotlib`
+  - `seaborn`
+  - `plotly`
+  - `jupyter`
+
+If we want to use a `requirements.txt`, it should look exactly like this:
+
+```txt
+numpy
+polars==1.34.0
+networkx
+matplotlib
+seaborn
+plotly
+jupyter
