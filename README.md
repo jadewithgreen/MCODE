@@ -4,7 +4,7 @@ In this project, we use a Jupyter Notebook to implement the **vertex-weighting s
 
 The dataset we use comes from:
 
-> Bandyopadhyay S. et al., *A human MAP kinase interactome* (2010)
+> Bandyopadhyay S. et al., *A human MAP kinase interactome* (2010) https://doi.org/10.1038/ncomms1139
 
 In our graph:
 - Each protein is a **node**
@@ -16,7 +16,7 @@ We load the dataset, build the graph using NetworkX, calculate vertex weights us
 
 ## Files Included
 
-- **`mcode (1).ipynb`** – Our main notebook with all code, explanations, and plots.
+- **`mcode.ipynb`** – Our main notebook with all code, explanations, and plots.
 - **`Bandyopadhyay2010.xls`** – The protein interaction dataset (this must be in the same folder as the notebook for it to load correctly).
 
 ---
